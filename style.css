@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #c9e6ff 0%, #8ecaff 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.calendar {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.weekdays {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+
+.weekday {
+  width: 30px;
+  text-align: center;
+  color: #7a7a7a;
+  font-size: 14px;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+}
+
+.date {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #555;
+  font-size: 16px;
+}
+
+.date.active {
+  background-color: #1e88e5;
+  color: white;
+  border-radius: 25%;
+}
+
+.date.has-entry::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 4px;
+  height: 4px;
+  background-color: #7a7a7a;
+  border-radius: 50%;
+}
+
+.song-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-button {
+  width: 50px;
+  background-color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  position: relative;
+}
+
+.search-icon::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: #333;
+  transform: rotate(45deg);
+  bottom: -5px;
+  right: -5px;
+}
+
+.add-button {
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
