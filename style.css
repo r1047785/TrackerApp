@@ -1,93 +1,44 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
-
 body {
-  background: linear-gradient(to bottom, #c9e6ff 0%, #8ecaff 100%);
-  min-height: 100vh;
-  padding: 20px;
-}
-
-.container {
-  max-width: 400px;
-  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
 }
 
 .app-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.calendar {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 30px;
-}
-
-.weekdays {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  padding: 0 5px;
-}
-
-.weekday {
-  width: 30px;
   text-align: center;
-  color: #7a7a7a;
-  font-size: 14px;
+  font-weight: 1000;
+  padding: 1em;
+  margin: 0;
 }
 
-.dates {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 15px;
-}
-
-.date {
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  color: #555;
-  font-size: 16px;
-}
-
-.date.active {
-  background-color: #1e88e5;
-  color: white;
-  border-radius: 25%;
-}
-
-.date.has-entry::after {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  width: 4px;
-  height: 4px;
-  background-color: #7a7a7a;
-  border-radius: 50%;
+.input-group {
+  font-weight: 600;
+  padding: 1em;
 }
 
 .song-section {
   margin-bottom: 30px;
+  padding: 1em;
 }
 
 .section-title {
+  color: darkblue;
+  margin-top: 2em;
   font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-weight: bolder;
 }
 
 .search-container {
+  margin: 0;
   display: flex;
-  margin-bottom: 20px;
 }
 
 .search-input {
@@ -101,7 +52,7 @@ body {
 
 .search-button {
   width: 50px;
-  background-color: white;
+  background-color: grey;
   border: none;
   border-radius: 0 5px 5px 0;
   display: flex;
@@ -129,6 +80,17 @@ body {
   right: -5px;
 }
 
+.section-title {
+  margin: 5px;
+  padding: 10px;
+}
+
+.subtitle {
+  font-size: small;
+  font-weight: lighter;
+  padding: 1em;
+}
+
 .add-button {
   background-color: white;
   border: none;
@@ -137,7 +99,7 @@ body {
   font-size: 16px;
   cursor: pointer;
   display: block;
-  margin: 0 auto;
+  margin: 1em auto;
   width: 80%;
   text-align: center;
 }
