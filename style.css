@@ -13,6 +13,7 @@ body {
 }
 
 .app-title {
+  color: darkblue;
   text-align: center;
   font-weight: 1000;
   padding: 1em;
@@ -50,34 +51,11 @@ body {
   font-size: 16px;
 }
 
-.search-button {
-  width: 50px;
-  background-color: grey;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
 .search-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid #333;
-  position: relative;
-}
-
-.search-icon::after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 2px;
-  background-color: #333;
-  transform: rotate(45deg);
-  bottom: -5px;
-  right: -5px;
+  background-color: white;
+  padding: 1em;
+  font-size: medium;
+  cursor: pointer;
 }
 
 .section-title {
@@ -92,7 +70,12 @@ body {
 }
 
 .add-button {
-  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 30;
+  justify-content: center;
+  width: 100%;
+  background-color: lightgray;
   border: none;
   border-radius: 25px;
   padding: 12px 20px;
@@ -102,4 +85,11 @@ body {
   margin: 1em auto;
   width: 80%;
   text-align: center;
+}
+
+.add-button:hover {
+  color: white;
+  background-color: darkblue;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
