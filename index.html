@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="app-title">REAL SOUND</h1>
+      <h1 class="app-title">REAL SOUND ▶</h1>
       <div class="input-group">
         <label for="date">Pick a date to add a Song & Memory:</label>
         <input type="date" id="date" name="date" />
@@ -24,16 +24,19 @@
         <div class="search-container">
           <input
             type="text"
+            id="songMemoryInput"
             class="search-input"
             placeholder="Add Title,Memory"
           />
-          <button class="search-button">
+          <button class="search-button" id="addInputBtn">
             <div class="search-icon">+</div>
           </button>
         </div>
       </div>
 
-      <button class="add-button">Add memory</button>
+      <div class="memory-list" id="memoryList"></div>
+
+      <button class="add-button" id="addMemoryBtn">Add memory</button>
 
       <script src="lib/app.js"></script>
     </div>

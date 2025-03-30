@@ -93,3 +93,34 @@ body {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
+
+/* New styles for memory list */
+.memory-list {
+  margin-top: 20px;
+  padding: 1em;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.memory-item {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.memory-date {
+  font-weight: 600;
+  color: darkblue;
+  margin-bottom: 5px;
+}
+
+.memory-song {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.memory-text {
+  color: #555;
+}
