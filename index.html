@@ -7,43 +7,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 class="app-title">REAL SOUND ▶</h1>
-      <div class="input-group">
-        <label for="date">Pick a date to add a Song & Memory:</label>
-        <input type="date" id="date" name="date" />
-      </div>
-
-      <div class="song-section">
-        <h2 class="section-title">SONG + MEMORY</h2>
-
-        <h3 class="subtitle">
-          the order is important so be sure to enter "Title,Memory"
-        </h3>
-
-        <div class="search-container">
-          <input
-            type="text"
-            id="songMemoryInput"
-            class="search-input"
-            placeholder="Add Title,Memory"
-          />
-          <button class="search-button" id="addInputBtn">
-            <div class="search-icon">+</div>
-          </button>
+    <div class="main-wrapper">
+      <div class="container">
+        <h1 class="app-title">REAL SOUND ▶</h1>
+        <div class="input-group">
+          <label for="date">Pick a date to add a Song & Memory:</label>
+          <input type="date" id="date" name="date" />
         </div>
+
+        <div class="song-section">
+          <h2 class="section-title">SONG + MEMORY</h2>
+
+          <h3 class="subtitle">
+            the order is important so be sure to enter "Title,Memory"
+          </h3>
+
+          <div class="search-container">
+            <input
+              type="text"
+              id="songMemoryInput"
+              class="search-input"
+              placeholder="Add Title,Memory"
+            />
+            <button class="search-button" id="addInputBtn">
+              <div class="search-icon">+</div>
+            </button>
+          </div>
+        </div>
+
+        <div class="memory-list" id="memoryList"></div>
+
+        <button class="add-button" id="addMemoryBtn">Add memory</button>
       </div>
-
-      <div class="memory-list" id="memoryList"></div>
-
-      <button class="add-button" id="addMemoryBtn">Add memory</button>
 
       <div class="history-panel">
         <h1 class="history-title">HISTORY 📚</h1>
         <div class="history-placeholder">History panel coming soon...</div>
       </div>
-
-      <script src="lib/app.js"></script>
     </div>
+    <script src="lib/app.js"></script>
   </body>
 </html>
