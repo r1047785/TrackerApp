@@ -3,16 +3,49 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: sans-serif;
   background-color: #f4f4f4;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 2em;
+  min-height: 100vh;
+}
+
+.main-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 2em;
+}
+
+.container {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-panel {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .app-title {
+  color: darkblue;
+  text-align: center;
+  font-weight: 1000;
+  padding: 1em;
+  margin: 0;
+}
+
+.history-title {
   color: darkblue;
   text-align: center;
   font-weight: 1000;
@@ -70,11 +103,6 @@ body {
 }
 
 .add-button {
-  position: fixed;
-  bottom: 0;
-  left: 30;
-  justify-content: center;
-  width: 100%;
   background-color: lightgray;
   border: none;
   border-radius: 25px;
@@ -94,7 +122,6 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-/* New styles for memory list */
 .memory-list {
   margin-top: 20px;
   padding: 1em;
@@ -123,4 +150,12 @@ body {
 
 .memory-text {
   color: #555;
+}
+
+/* Basic history panel placeholder */
+.history-placeholder {
+  text-align: center;
+  color: #666;
+  padding: 2em;
+  font-style: italic;
 }
