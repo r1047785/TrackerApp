@@ -158,3 +158,41 @@ body {
   padding: 2em;
   font-style: italic;
 }
+
+.history-list {
+  padding: 1em;
+}
+
+.history-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-date {
+  font-weight: 600;
+  color: darkblue;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.history-song {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.history-memory {
+  color: #555;
+  line-height: 1.4;
+}
+
+.no-history {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 2em;
+}
