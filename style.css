@@ -102,6 +102,57 @@ body {
   padding: 1em;
 }
 
+.mood-section {
+  margin: 20px 0;
+  padding: 1em;
+}
+
+.mood-title {
+  color: darkblue;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mood-selector {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.mood-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.mood-option:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.mood-option.active {
+  border-color: darkblue;
+  background-color: #e6f2ff;
+}
+
+.mood-emoji {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.mood-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+}
+
 .add-button {
   background-color: lightgray;
   border: none;
@@ -161,6 +212,8 @@ body {
 
 .history-list {
   padding: 1em;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
 }
 
 .history-item {
@@ -169,6 +222,7 @@ body {
   margin-bottom: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid darkblue;
 }
 
 .history-date {
@@ -176,6 +230,9 @@ body {
   color: darkblue;
   margin-bottom: 8px;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .history-song {
